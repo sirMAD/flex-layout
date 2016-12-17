@@ -1,0 +1,59 @@
+<div class="o-tpl">
+  <header class="o-tpl__row o-tpl__header">
+    <div class="o-tpl__sizer">
+      HEADER
+    </div>
+  </header>
+
+  <div class="o-tpl_row" [ngStyle]="{'background-color': 'gold'}">
+    Another row
+  </div>
+
+  <main class="o-tpl__row o-tpl__main">
+    <aside class="o-tpl__col o-tpl__aside">
+      ASIDE
+    </aside>
+    <div class="o-tpl__col o-tpl__col--full o-tpl__content">
+      
+      <section class="o-tpl__col-section">
+        Section 1
+      </section>
+
+      <section class="o-tpl__col-section">
+        Section 2
+      </section>
+
+      <!--
+      <section class="o-tpl__col-section o-tpl__col-section--scroll">
+        Section 2
+        <div *ngFor="let item of arr">
+            {{i}} - CONTENT
+          </div>
+      </section>
+      -->
+
+      <section class="o-tpl__col-section o-tpl__col-section--scroll">
+        <div class="o-tpl__col-section-scroll">
+          Section 3
+
+          <div *ngFor="let item of arr">
+            {{i}} - CONTENT
+          </div>
+
+        </div>
+      </section>
+
+      <section class="o-tpl__col-section o-tpl__col-section--scroll">
+        <div class="o-tpl__col-section-scroll">
+          Section 4
+
+          <div *ngFor="let item of arr">
+            {{i}} - CONTENT
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+</div>

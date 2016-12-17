@@ -1,0 +1,84 @@
+:root {
+    overflow: hidden;
+}
+
+.o-tpl {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(red, 0.1);
+
+}
+
+.o-tpl__row {
+    position: relative;
+    flex: 0 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100vw;
+
+    &:last-child {
+        flex: 1;
+    }
+}
+
+.o-tpl__col {
+    position: relative;
+    flex: 0 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+
+    &--full {
+        flex: 1 1 auto;
+    }
+}
+
+.o-tpl__col-section {
+    position: relative;
+    display: block;
+    flex: 0 0 auto;
+    width: 100%;
+    //display: flex;
+
+    overflow: auto;
+
+    &--scroll {
+        flex: 1;
+        display: flex;
+        overflow-y: auto;
+       // min-height: min-content;
+    }
+}
+
+.o-tpl__col-section-scroll {
+    min-height: 0px;// min-content; /* needs vendor prefixes */
+    display: flex;
+    flex-flow:column nowrap;
+}
+
+.o-tpl__header {
+    height: 60px;
+
+}
+
+.o-tpl__main {
+    background: rgba(red, 0.1);
+    //height: 100vh;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.o-tpl__aside {
+    width: 200px;
+
+    background: rgba(green, 0.3);
+}
+
+.o-tpl__content {
+    background: rgba(blue, 0.1);
+}

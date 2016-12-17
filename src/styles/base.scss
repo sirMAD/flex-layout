@@ -1,0 +1,56 @@
+/*
+ ** Generic - Base
+ ** -----------------------------------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+:root {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+
+body {
+  position: relative;
+  display: block;
+  height: auto;
+  min-height: 100%;
+  font-family: Arial, Verdana, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.4em;
+  color: #007;
+  background-color: #EFEFEF;
+
+  &.dashboard {
+    -ms-overflow-style: none;
+  }
+}
