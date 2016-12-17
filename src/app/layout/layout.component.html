@@ -1,6 +1,6 @@
 <div class="o-tpl">
   <header class="o-tpl__row o-tpl__header">
-    <div class="o-tpl__sizer">
+    <div class="o-tpl__size">
       HEADER
     </div>
   </header>
@@ -13,6 +13,7 @@
     <aside class="o-tpl__col o-tpl__aside">
       ASIDE
     </aside>
+
     <div class="o-tpl__col o-tpl__col--full o-tpl__content">
       
       <section class="o-tpl__col-section">
@@ -20,24 +21,24 @@
       </section>
 
       <section class="o-tpl__col-section">
-        Section 2
+        Section 2 <br> Lorem ipsum dolor sit amet
       </section>
 
-      <!--
-      <section class="o-tpl__col-section o-tpl__col-section--scroll">
-        Section 2
-        <div *ngFor="let item of arr">
-            {{i}} - CONTENT
-          </div>
+      <section class="o-tpl__col-section">
+        <div class="o-tpl__size">
+          Section 2 <br> Lorem ipsum dolor sit amet
+          Section 2 <br> Lorem ipsum dolor sit amet
+        </div>
       </section>
-      -->
 
       <section class="o-tpl__col-section o-tpl__col-section--scroll">
         <div class="o-tpl__col-section-scroll">
-          Section 3
+          <div class="o-tpl__size">
+            Section 3
 
-          <div *ngFor="let item of arr">
-            {{i}} - CONTENT
+            <div *ngFor="let item of arr">
+              {{i}} - CONTENT
+            </div>
           </div>
 
         </div>

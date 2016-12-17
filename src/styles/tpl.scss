@@ -1,3 +1,10 @@
+$local-min-width: 1024px;
+$local-max-width: 1600px;//2000px;
+
+$local-tpl-aside-width: 200px;
+
+
+
 :root {
     overflow: hidden;
 }
@@ -38,24 +45,20 @@
 .o-tpl__col-section {
     position: relative;
     display: block;
-    flex: 0 0 auto;
     width: 100%;
-    //display: flex;
-
-    overflow: auto;
 
     &--scroll {
+        flex-flow: column nowrap;
         flex: 1;
         display: flex;
         overflow-y: auto;
-       // min-height: min-content;
     }
 }
 
 .o-tpl__col-section-scroll {
     min-height: 0px;// min-content; /* needs vendor prefixes */
     display: flex;
-    flex-flow:column nowrap;
+    flex-flow: column nowrap;
 }
 
 .o-tpl__header {
@@ -67,11 +70,24 @@
     background: rgba(red, 0.1);
     //height: 100vh;
     position: absolute;
-    top: 60px;
+    top: 88px;
     left: 0;
     right: 0;
     bottom: 0;
 }
+
+.o-tpl__size {
+    width: 100%;
+    min-width: $local-min-width;
+    max-width: $local-max-width;
+
+    .o-tpl__main & {
+        min-width: $local-min-width - $local-tpl-aside-width;
+        max-width: $local-max-width - $local-tpl-aside-width;
+    }
+}
+
+//----------------------
 
 .o-tpl__aside {
     width: 200px;
